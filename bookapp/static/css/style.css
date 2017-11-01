@@ -1,0 +1,31 @@
+div {
+    display: inline-block;
+}
+div[id="sidebar"] {
+    margin-right: 10px;
+    width: 150px;
+    margin-top: 0px;
+    vertical-align: top;
+}
+div[id="content"] {
+    width: 80%;
+}
+li {
+    border-top: 1px solid grey;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    list-style: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100px;
+    text-align: center;
+}
+li:nth-child(1) {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+li:nth-last-child(1) {
+    border-bottom: 1px solid grey;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
