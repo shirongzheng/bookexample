@@ -8,7 +8,6 @@ handlers:
 - url: /static
   static_dir: bookapp/static
 
-
 - url: .*
   script : bookapp.app
 libraries:
