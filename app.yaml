@@ -1,3 +1,18 @@
+application : hw6p2csc473
+version : 1
+runtime : python3.6
+api_version : 1
+threadsafe: true
+
 handlers:
 - url: /static
   static_dir: bookapp/static
+
+
+- url: .*
+  script : bookapp.app
+libraries:
+- name: jinja2
+  version: latest
+- name: markupsafe
+  version: latest
